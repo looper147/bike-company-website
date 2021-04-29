@@ -62,10 +62,13 @@
   display: block;
   text-align: left;
   border-bottom: 0.6px solid grey;
+  
 }
 
 .dropdown-content button:hover {
   background-color: none;
+  font-weight: bold;
+
 
 }
 
