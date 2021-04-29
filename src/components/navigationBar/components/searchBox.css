@@ -50,6 +50,11 @@ button{
 	padding-right: 1em;
 	width: 340px;
 }
+.search-box-input:focus{
+	padding-left: 2em;
+	padding-right: 1em;
+	width: 340px;
+}
 .search-box-btn:active{
 	transform: scale(.75);
 }
