@@ -9,27 +9,27 @@ export default function NavigationBar() {
             <div className="dropdown">
                 <button className="dropbtn">Types</button>
                 <div className="dropdown-content">
-                    <a >Street</a>
-                    <a >Off-road</a>
-                    <a >Dual purpose</a>
+                    <button>Street</button>
+                    <button>Off-road</button>
+                    <button>Dual purpose</button>
                 </div>
             </div>
             <div className="dropdown">
                 <button className="dropbtn">Model Year</button>
                 <div className="dropdown-content">
-                    <a>1970-2000</a>
-                    <a>2001-2010</a>
-                    <a>2010-2021</a>
+                    <button>1970-2000</button>
+                    <button>2001-2010</button>
+                    <button>2010-2021</button>
                 </div>
             </div>
             <div className="dropdown">
                 <button className="dropbtn">Manufacturers</button>
                 <div className="dropdown-content">
-                    <a>Harley-Davidson	</a>
-                    <a>Honda</a>
-                    <a>Yamaha</a>
-                    <a>Kawasaki</a>
-                    <a>Suzuki</a>
+                    <button>Harley-Davidson	</button>
+                    <button>Honda</button>
+                    <button>Yamaha</button>
+                    <button>Kawasaki</button>
+                    <button>Suzuki</button>
                 </div>
             </div>
             <SearchBox />
