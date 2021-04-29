@@ -10,11 +10,11 @@ button:hover{
 
 .navBt {
   float: left;
-  font-size: 21px;
+  font-size: 20px;
   color: white;
-  text-align: center;
   padding: 20px 24px;
   text-decoration: none;
+  margin-top: 5px;
 
 }
 .navBt:hover {

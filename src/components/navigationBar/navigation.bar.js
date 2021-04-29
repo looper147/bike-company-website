@@ -1,13 +1,14 @@
 import "./navigation.bar.css";
 import SearchBox from "./components/searchBox.js"
 import LightMode from "./components/lightMode.js";
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 export default function NavigationBar() {
     return (
         <div className="navbar">
             <button className="navBt">Home</button>
             <button className="navBt">News</button>
             <div className="dropdown">
-                <button className="dropbtn">Types</button>
+                <button className="dropbtn">Types<ArrowDropDownIcon /></button>
                 <div className="dropdown-content">
                     <button>Street</button>
                     <button>Off-road</button>
@@ -15,7 +16,7 @@ export default function NavigationBar() {
                 </div>
             </div>
             <div className="dropdown">
-                <button className="dropbtn">Model Year</button>
+                <button className="dropbtn">Model Year<ArrowDropDownIcon /></button>
                 <div className="dropdown-content">
                     <button>1970-2000</button>
                     <button>2001-2010</button>
@@ -23,7 +24,7 @@ export default function NavigationBar() {
                 </div>
             </div>
             <div className="dropdown">
-                <button className="dropbtn">Manufacturers</button>
+                <button className="dropbtn">Manufacturers<ArrowDropDownIcon /></button>
                 <div className="dropdown-content">
                     <button>Harley-Davidson	</button>
                     <button>Honda</button>
