@@ -2,9 +2,7 @@
   overflow: hidden;
   
 }
-button {
-  color: white;
-}
+
 button:hover{
   border-top: 1px solid orangered !important;
   transition: all 0.4s ease;
@@ -40,7 +38,7 @@ button:hover{
   cursor: pointer;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar button:hover, .dropdown:hover .dropbtn {
   color: red;
 }
 
@@ -54,18 +52,20 @@ button:hover{
   
 }
 
-.dropdown-content a {
+.dropdown-content button {
   float: none;
   color: black;
-  padding: 12px 16px;
+  padding: 22px 32px;
+  width: 100%;
+  font-size: 14px;
   text-decoration: none;
   display: block;
   text-align: left;
   border-bottom: 0.6px solid grey;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+.dropdown-content button:hover {
+  background-color: none;
   border: 1px solid orangered !important;
 
 }
