@@ -15,6 +15,7 @@ button{
     border: none;
 	background: none;
 	outline: none;
+	margin: auto;
 }
 .search-box{
 	display: flex;

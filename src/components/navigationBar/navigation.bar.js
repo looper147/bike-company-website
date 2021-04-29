@@ -5,7 +5,7 @@ export default function NavigationBar() {
     return (
         <div className="navbar">
             <button className="navBt">Home</button>
-            <button className="navBt">New</button>
+            <button className="navBt">News</button>
             <div className="dropdown">
                 <button className="dropbtn">Types</button>
                 <div className="dropdown-content">
