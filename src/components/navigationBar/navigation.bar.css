@@ -183,7 +183,7 @@ ul li button {
     z-index: 0;
 }
 .navBt:hover,.dropdown:hover {
-    border-top: 1px transparent orangered !important;
+    border-top: none !important;
     transition: all 0.4s ease;
 
 }
