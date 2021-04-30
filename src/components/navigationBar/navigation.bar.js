@@ -9,11 +9,18 @@ export default function NavigationBar() {
 
                 <ul>
                     <li>
-                        <button className="navBt">Home<ArrowDropDownIcon /></button>
+                        <button className="navBt">Home<ArrowDropDownIcon style={{ color: "transparent" }} /></button>
                     </li>
 
                     <li>
-                        <button className="navBt">News<ArrowDropDownIcon /></button>
+                        <div className="dropdown">
+                            <button className="dropbtn">News<ArrowDropDownIcon /></button>
+                            <div className="dropdown-content">
+                                <button>Latest News</button>
+                                <button>Newest Bikes</button>
+                                <button>Sports</button>
+                            </div>
+                        </div>
                     </li>
 
                     <li>
