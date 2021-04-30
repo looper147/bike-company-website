@@ -112,21 +112,25 @@ ul li button {
 
 /* on smaller screens*/
 @media (max-width:768px) {
+  body {
+    height: 100%;
+  }
   .toggle {
     display: block;
   }
   ul {
     width: 100%;
+    
   }
   ul li {
-    display: inline-block;
+    display: block;
     text-align: center;
   }
   ul li button {
   color: white;
   text-decoration: none;
-  padding: 13px 15px;
-  font-size: 10px;
+  padding: 43px 45px;
+  font-size: 30px;
 }
 .dropdown-content {
   display: none;
@@ -135,6 +139,8 @@ ul li button {
   min-width: 65px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  left: 170px;
+
   
 }
 
