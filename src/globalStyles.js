@@ -14,6 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     ul li button {
       color: ${({ theme }) => theme.text} ;
     }
+    
     .search-box input,.search-box input::placeholder{
       color: ${({ theme }) => theme.text};
       background: none;

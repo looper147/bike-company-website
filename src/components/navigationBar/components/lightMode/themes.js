@@ -6,4 +6,5 @@ export const darkMode = {
 export const lightMode = {
     body: 'white',
     text: 'black',
+
 }

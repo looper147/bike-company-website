@@ -1,5 +1,6 @@
 *{
 	box-sizing: border-box;
+
 }
 
 .container{
@@ -7,6 +8,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	
 }
 
 
@@ -15,11 +18,15 @@ button{
     border: none;
 	background: none;
 	outline: none;
+
+
 }
 .search-box{
 	display: flex;
 	background: #08090A;
 	border-radius: 4em;
+
+	
 }
 .search-box-input{
 	width: 0px;
@@ -29,12 +36,14 @@ button{
     border: none;
 	background: none;
 	outline: none;
+
 }
 .search-box-btn{
 	border-radius: 50%;
-	
 	background: white;
 	transition: .3s;
+	border: none  !important;
+
 }
 
 .search-box-input::placeholder{
