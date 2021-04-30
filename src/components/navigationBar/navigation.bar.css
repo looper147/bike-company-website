@@ -95,7 +95,7 @@ ul li button {
 .dropdown-content:after {
     content: "";
     position: absolute;
-    right: 66px;
+    right: 85px ;
     top: -21px;
     width: 0;
     height: 0;
