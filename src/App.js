@@ -27,11 +27,15 @@ function App() {
     <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
       <>
         <GlobalStyles bg={bg} />
-        <NavigationBar />
-        <label style={{ float: "right" }} >
-          <Switch onClick={toggleTheme} id="lightMode" />
-          Light Mode
-        </label>
+        <NavigationBar
+          lightMode={
+            <label style={{ float: "right" }} >
+              <Switch onClick={toggleTheme} id="lightMode" />
+              Light Mode
+            </label>
+          }
+        />
+
 
       </>
     </ThemeProvider>
