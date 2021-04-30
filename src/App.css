@@ -1,13 +1,13 @@
-body {
-    background-color: #282c34;
-    background-image: url("./components/images/background.jpg");
+ body {
+    /*background-color: #282c34;*/
+    /*background-image: url("./components/images/darkMode.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
     margin: 0;
     padding: 0;
-}
-@media (max-width:768px) {
+} 
+/* @media (max-width:768px) {
   body {
     background-color: #282c34;
     background-image: url("./components/images/background.jpg");
@@ -17,4 +17,4 @@ body {
     margin: 0;
     padding: 0;
 }
-}
+} */
