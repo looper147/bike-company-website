@@ -15,8 +15,6 @@ button{
     border: none;
 	background: none;
 	outline: none;
-	margin: auto;
-	margin-top: 10px;
 }
 .search-box{
 	display: flex;
@@ -33,10 +31,8 @@ button{
 	outline: none;
 }
 .search-box-btn{
-	display: flex;
 	border-radius: 50%;
-	width: 4em;
-	height: 4em;
+	
 	background: white;
 	transition: .3s;
 }
@@ -48,12 +44,12 @@ button{
 .search-box:hover .search-box-input{
 	padding-left: 2em;
 	padding-right: 1em;
-	width: 340px;
+	width: 250px;
 }
 .search-box-input:focus{
 	padding-left: 2em;
 	padding-right: 1em;
-	width: 340px;
+	width: 250px;
 }
 .search-box-btn:active{
 	transform: scale(.75);

@@ -4,6 +4,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
+    margin: 0;
+    padding: 0;
 }
 .App {
   text-align: center;
