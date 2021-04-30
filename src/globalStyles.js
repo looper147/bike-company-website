@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import bg from "./App.js"
-import lightModeBg from "./components/images/lightMode.jpg"
+
 
 export const GlobalStyles = createGlobalStyle`
 
