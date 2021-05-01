@@ -6,27 +6,23 @@ import { ThemeProvider } from 'styled-components';
 import { lightMode, darkMode } from './components/navigationBar/components/lightMode/themes.js';
 import { GlobalStyles } from './globalStyles.js';
 import Switch from "@material-ui/core/Switch";
-import lightModeBg from "./components/images/lightMode.jpg"
-import darkModeBg from "./components/images/darkMode.jpg"
+
 
 function App() {
   const [theme, setTheme] = useState('dark');
-  const [bg, setBg] = useState(darkModeBg);
 
   const toggleTheme = () => {
     if (theme === "dark") {
       setTheme('light');
-      setBg(lightModeBg)
     } else {
       setTheme('dark')
-      setBg(darkModeBg)
     }
   }
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
       <>
-        <GlobalStyles bg={bg} />
+        <GlobalStyles />
         <NavigationBar
           lightMode={
             <label style={{ float: "right" }} >

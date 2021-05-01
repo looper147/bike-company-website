@@ -1,6 +1,7 @@
 import "./navigation.bar.css";
 import SearchBox from "./components/searchBox.js"
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+
 export default function NavigationBar(props) {
     return (
         <>
@@ -65,14 +66,13 @@ export default function NavigationBar(props) {
                         {props.lightMode}
                     </li>
                 </ul>
-
+                <h1>1</h1>
 
 
 
 
 
             </nav>
-
         </>
 
     )
