@@ -40,9 +40,9 @@ button{
 }
 .search-box-btn{
 	border-radius: 50%;
-	background: white;
 	transition: .3s;
 	border: none  !important;
+
 
 }
 
@@ -53,12 +53,12 @@ button{
 .search-box:hover .search-box-input{
 	padding-left: 2em;
 	padding-right: 1em;
-	width: 250px;
+	width: 235px;
 }
 .search-box-input:focus{
 	padding-left: 2em;
 	padding-right: 1em;
-	width: 250px;
+	width: 235px;
 }
 .search-box-btn:active{
 	transform: scale(.75);

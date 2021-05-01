@@ -66,11 +66,6 @@ export default function NavigationBar(props) {
                         {props.lightMode}
                     </li>
                 </ul>
-                <h1>1</h1>
-
-
-
-
 
             </nav>
         </>
