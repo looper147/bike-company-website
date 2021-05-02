@@ -7,6 +7,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Skeleton from "react-loading-skeleton/lib/";
+import PropTypes from 'prop-types';
+
 const useStyles = makeStyles({
     test: {
         maxWidth: 345,
@@ -14,6 +17,7 @@ const useStyles = makeStyles({
         color: "white",
     },
     media: {
+        width: 350,
         height: 210,
 
     },
@@ -22,37 +26,55 @@ const useStyles = makeStyles({
     }
 });
 
-export default function BikeCard(props) {
+function BikeCardDemo(props) {
     const classes = useStyles();
-
+    const { loading = false } = props;
     return (
         <Card className={classes.test}>
+
             <CardActionArea >
-                <CardMedia
-                    className={classes.media}
-                    image={props.picSrc}
-                    title={props.picTitle}
-                />
+                {loading ? <Skeleton variant={"rect"} className={classes.media} /> :
+                    <CardMedia
+                        className={classes.media}
+                        image={props.picSrc}
+                        title={props.picTitle}
+                    />
+                }
+
 
                 <CardContent>
                     <Typography variant="h5" component="h5">
-                        {props.bikeName}
+                        {loading ? <Skeleton /> : props.bikeName}
                     </Typography>
 
                     <Typography variant="h5" component="h4">
-                        {props.bikePrice}
+                        {loading ? <Skeleton /> : props.bikePrice}
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions >
-                <Button size="small" className={classes.button}>
-                    Purchase
-                </Button>
-
-                <Button size="small" className={classes.button}>
-                    Check Specifications
-                </Button>
+                {loading ? <Skeleton variant={"button"} /> :
+                    <Button size="small" className={classes.button}>
+                        Purchase
+                    </Button>
+                }
+                {loading ? <Skeleton variant={"button"} /> :
+                    <Button size="small" className={classes.button}>
+                        Check Specifications
+                    </Button>
+                }
             </CardActions>
+
         </Card>
+    );
+}
+BikeCardDemo.propTypes = {
+    loading: PropTypes.bool,
+};
+export default function BikeCard(props) {
+    return (
+        <>
+            <BikeCardDemo picSrc={props.picSrc} picTitle={props.picTitle} bikeName={props.bikeName} bikePrice={props.bikePrice} />
+        </>
     );
 }
