@@ -53,12 +53,12 @@ function BikeCardDemo(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions >
-                {loading ? <Skeleton variant={"button"} /> :
+                {loading ? <Skeleton variant={"rect"} width="60px" height="30px" /> :
                     <Button size="small" className={classes.button}>
                         Purchase
                     </Button>
                 }
-                {loading ? <Skeleton variant={"button"} /> :
+                {loading ? <Skeleton variant={"rect"} width="100px" height="30px" /> :
                     <Button size="small" className={classes.button}>
                         Check Specifications
                     </Button>
