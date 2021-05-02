@@ -1,7 +1,7 @@
 import "./navigation.bar.css";
 import SearchBox from "./components/searchBox.js"
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-
+import { NavLink } from "react-router-dom";
 export default function NavigationBar(props) {
     return (
         <>
@@ -9,12 +9,14 @@ export default function NavigationBar(props) {
 
                 <ul>
                     <li>
-                        <button className="navBt">Home<ArrowDropDownIcon style={{ color: "transparent" }} /></button>
+                        <NavLink exact to="/" ><button className="navBt">Home<ArrowDropDownIcon style={{ color: "transparent" }} /></button> </NavLink>
                     </li>
 
                     <li>
                         <div className="dropdown">
-                            <button className="dropbtn">News<ArrowDropDownIcon /></button>
+                            <NavLink to="/News">
+                                <button className="dropbtn">News<ArrowDropDownIcon /></button>
+                            </NavLink>
                             <div className="dropdown-content">
                                 <button>Latest News</button>
                                 <button>Newest Bikes</button>

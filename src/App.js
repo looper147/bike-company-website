@@ -6,8 +6,9 @@ import { ThemeProvider } from 'styled-components';
 import { lightMode, darkMode } from './components/navigationBar/components/lightMode/themes.js';
 import { GlobalStyles } from './globalStyles.js';
 import Switch from "@material-ui/core/Switch";
-
-
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage.js";
+import NewsPage from "./pages/NewsPage.js";
 function App() {
   const [theme, setTheme] = useState('dark');
 
@@ -23,14 +24,18 @@ function App() {
     <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
       <>
         <GlobalStyles />
-        <NavigationBar
-          lightMode={
-            <label style={{ float: "right" }} >
-              <Switch onClick={toggleTheme} id="lightMode" />
-              Light Mode
-            </label>
-          }
-        />
+        <Router>
+          <NavigationBar
+            lightMode={
+              <label style={{ float: "right" }} >
+                <Switch onClick={toggleTheme} id="lightMode" />
+                Light Mode
+              </label>
+            }
+          />
+          <Route exact path="/" component={HomePage} />
+          <Route path="/News" component={NewsPage} />
+        </Router>
 
 
       </>
