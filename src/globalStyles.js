@@ -15,10 +15,10 @@ export const GlobalStyles = createGlobalStyle`
       color: ${({ theme }) => theme.liItems} ;
     }
     .dropdown-content button {
-      color: ${({ theme }) => theme.liItems} ;
+      color: ${({ theme }) => theme.dropDownItems} ;
     }
     .search-box input,.search-box input::placeholder{
-      color: ${({ theme }) => theme.text};
+      color: ${({ theme }) => theme.placeHolderText};
       background: none;
     }
     .search-box {
@@ -29,6 +29,7 @@ export const GlobalStyles = createGlobalStyle`
       background: ${({ theme }) => theme.searchBtColor};
       transition: .3s;
       border: none  !important;
+      color: ${({ theme }) => theme.placeHolderText} !important;
 
     }
     

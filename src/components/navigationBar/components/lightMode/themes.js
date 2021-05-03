@@ -10,9 +10,11 @@ export const darkMode = {
 
 export const lightMode = {
     body: 'white',
-    text: '#2E3C42',
+    text: 'white',
+    placeHolderText: "#282c34",
     bg: lightModeBg,
-    liItems: '#2E3C42',
+    liItems: 'white',
+    dropDownItems: "#2E3C42",
     searchBtBg: 'white',
 
 }
