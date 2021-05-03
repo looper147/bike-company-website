@@ -12,8 +12,8 @@ import PropTypes from 'prop-types';
 const useStyles = makeStyles({
     card: {
         maxWidth: 345,
-        backgroundColor: "orangered",
-        color: "white",
+        backgroundColor: "lightgrey",
+        color: "#2E3C42",
     },
     media: {
         width: 350,

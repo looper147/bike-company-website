@@ -20,7 +20,7 @@ export default function NewsPage() {
                         picSrc={bikePic}
                         picTitle={"YZ450F MONSTER ENERGY YAMAHA RACING EDITION"}
                         bikeName={"YZ450F MONSTER ENERGY YAMAHA RACING EDITION"}
-                        bikePrice={"9599$"}
+                        bikePrice={"$9599"}
 
                     />
                 </Grid>
@@ -29,7 +29,7 @@ export default function NewsPage() {
                         picSrc={bikePic2}
                         picTitle={"V STAR 250"}
                         bikeName={"V STAR 250"}
-                        bikePrice={"4449$"}
+                        bikePrice={"$4449"}
                     />
                 </Grid>
                 <Grid item xs>
@@ -37,7 +37,7 @@ export default function NewsPage() {
                         picSrc={bikePic3}
                         picTitle={"YZF-R3 MONSTER ENERGY YAMAHA MOTOGP EDITION"}
                         bikeName={"YZF-R3 MONSTER ENERGY YAMAHA MOTOGP EDITION"}
-                        bikePrice={"5599"}
+                        bikePrice={"$5599"}
 
                     />
                 </Grid>
