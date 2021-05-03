@@ -15,5 +15,4 @@ export const lightMode = {
     liItems: '#2E3C42',
     searchBtBg: 'white',
 
-
 }
