@@ -5,16 +5,21 @@ import bikePic3 from "./HomePage/components/YZF-R3MONSTERENERGYYAMAHAMOTOGPEDITI
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from "@material-ui/core/styles/";
 
-const styles = makeStyles({
+const styles = makeStyles((theme) => ({
+    root: {
+        alignItems: "center",
+        justifyItems: "center",
+    },
     card: {
+        padding: theme.spacing(1),
         textAlign: "center"
     }
-})
+}))
 export default function NewsPage() {
     return (
         <>
             <h2>Welcome To The News Page!</h2>
-            <Grid container spacing={1}>
+            <Grid container className={styles.root}>
                 <Grid item xs className={styles.card}>
                     <BikeCard
                         picSrc={bikePic}
@@ -24,7 +29,7 @@ export default function NewsPage() {
 
                     />
                 </Grid>
-                <Grid item xs>
+                <Grid item xs className={styles.card}>
                     <BikeCard
                         picSrc={bikePic2}
                         picTitle={"V STAR 250"}
@@ -32,7 +37,7 @@ export default function NewsPage() {
                         bikePrice={"$4449"}
                     />
                 </Grid>
-                <Grid item xs>
+                <Grid item xs className={styles.card}>
                     <BikeCard
                         picSrc={bikePic3}
                         picTitle={"YZF-R3 MONSTER ENERGY YAMAHA MOTOGP EDITION"}
