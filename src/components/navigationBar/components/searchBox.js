@@ -6,7 +6,7 @@ export default function SearchBox() {
             <div className="search-box">
                 <input type="text" className="search-box-input" placeholder="What are you looking for ?" />
                 <button className="search-box-btn" >
-                    <SearchIcon />
+                    <SearchIcon className="searchIcon" />
                 </button>
             </div>
         </div>

@@ -6,6 +6,7 @@ export const darkMode = {
     text: 'white',
     bg: darkModeBg,
     searchBtColor: 'orangered',
+    searchBtBgHover: "red",
 }
 
 export const lightMode = {
@@ -16,5 +17,6 @@ export const lightMode = {
     liItems: 'white',
     dropDownItems: "#2E3C42",
     searchBtBg: 'white',
+    searchBtBgHover: "green",
 
 }

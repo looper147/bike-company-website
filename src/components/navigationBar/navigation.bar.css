@@ -50,7 +50,7 @@ ul li button {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 175px;
+  min-width: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   
@@ -124,25 +124,23 @@ ul li button {
     
   }
   ul li {
-    display: block;
+    display:flex;
     text-align: center;
   }
   ul li button {
   color: white;
   text-decoration: none;
-  padding: 43px 45px;
+  padding: 23px 25px;
   font-size: 30px;
 }
 .dropdown-content {
-  display: none;
-  position: absolute;
+  display: block;
+  position:absolute;
   background-color: #f9f9f9;
   min-width: 65px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  left: 170px;
-
-  
+  left: 240px;
 }
 
 .dropdown-content button {
@@ -166,20 +164,18 @@ ul li button {
   border-bottom-color: white;
   border-width: 11px;
   margin-left: -10px;
-  top: -21px;
-  left: 30px ;
+  right: auto;
   z-index: 1;
 } 
 
 .dropdown-content:after {
     content: "";
     position: absolute;
-    left: 30px ;
-    top: -21px;
-    width: 0;
-    height: 0;
+    left: 22px ;
+    right: -21px;
+   
     border: solid transparent;
-  border-width: 11px;
+    border-width: 11px;
     border-bottom-color: #2B1A41;
     z-index: 0;
 }

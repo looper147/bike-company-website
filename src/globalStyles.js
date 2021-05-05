@@ -30,7 +30,10 @@ export const GlobalStyles = createGlobalStyle`
       transition: .3s;
       border: none  !important;
       color: ${({ theme }) => theme.placeHolderText} !important;
-
     }
     
+    .search-box-btn:hover{
+      background: ${({ theme }) => theme.searchBtBgHover};
+      color: white;
+    }
     `;

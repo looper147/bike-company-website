@@ -19,7 +19,7 @@ export default function NewsPage() {
     return (
         <>
             <h2>Welcome To The News Page!</h2>
-            <Grid container className={styles.root}>
+            <Grid container className={styles.root} alignItems="center">
                 <Grid item xs className={styles.card}>
                     <BikeCard
                         picSrc={bikePic}

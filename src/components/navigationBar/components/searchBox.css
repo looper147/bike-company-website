@@ -8,8 +8,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-	
 }
 
 
@@ -25,11 +23,11 @@ button{
 	display: flex;
 	background: #08090A;
 	border-radius: 4em;
-
 	
 }
 .search-box-input{
-	width: 0px;
+	width: 0;
+	padding: 0 0 ;
 	font-size: 1em;
 	color: #fff;
 	transition: .5s;
@@ -39,12 +37,13 @@ button{
 
 }
 .search-box-btn{
-	border-radius: 50%;
+	border-radius: 50% ;
 	transition: .3s;
 	border: none  !important;
 
 
 }
+
 
 .search-box-input::placeholder{
 	color: white;
