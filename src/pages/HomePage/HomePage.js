@@ -1,7 +1,7 @@
 import Typography from "@material-ui/core/Typography";
 import styled from "styled-components";
-import { makeStyles } from "@material-ui/core/styles";
-import pic from "./components/darkMode2.jpg";
+// import { makeStyles } from "@material-ui/core/styles";
+// import pic from "./components/darkMode2.jpg";
 const BoldText = styled.b`
     color: ${({ theme }) => theme.borderTop}
 `
