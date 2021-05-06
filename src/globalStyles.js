@@ -11,19 +11,15 @@ export const GlobalStyles = createGlobalStyle`
       transition: all 0.25s linear;
       
     }
-    ul li button {
-      color: ${({ theme }) => theme.liItems} ;
-    }
-    .dropdown-content button {
-      color: ${({ theme }) => theme.dropDownItems} ;
-    }
+    
     .search-box input,.search-box input::placeholder{
       color: ${({ theme }) => theme.placeHolderText};
       background: none;
     }
     .search-box {
-      background-color: ${({ theme }) => theme.searchBtBg};
+      background-color: ${({ theme }) => theme.searchBtBg} !important;
     }
+    
     .search-box-btn{
       border-radius: 50%;
       background: ${({ theme }) => theme.searchBtColor};
