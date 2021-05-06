@@ -4,7 +4,7 @@ import darkModeBg from "./images/darkMode.jpg"
 export const darkMode = {
     body: '#282c34',
     text: 'white',
-    bg: darkModeBg,
+    bg: "darkModeBg",
     borderTop: "#FF5722",
     searchBtColor: '#282c34',
     searchBtBg: '#282c34',
@@ -19,7 +19,7 @@ export const lightMode = {
     text: 'black',
     borderTop: "#673AB7",
     placeHolderText: "#282c34",
-    bg: lightModeBg,
+    bg: "lightModeBg",
     liItems: 'white',
     dropDownItems: "#2E3C42",
     searchBtBg: 'white',
