@@ -8,7 +8,7 @@ export const darkMode = {
     borderTop: "#FF5722",
     searchBtColor: '#282c34',
     searchBtBg: '#282c34',
-    searchBtBgHover: "red",
+    searchBtBgHover: "#FF5722",
     bikeCardBtBg1: "#4CAF50",
     bikeCardBtBg2: "#2979FF",
     bikeCardBg: "#FF5722",

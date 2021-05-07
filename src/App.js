@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import './App.css';
-import 'fontsource-roboto';
 import NavigationBar from "./components/navigationBar/navigation.bar";
 import { ThemeProvider } from 'styled-components';
 import { lightMode, darkMode } from './components/navigationBar/components/lightMode/themes.js';
