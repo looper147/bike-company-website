@@ -10,15 +10,24 @@ import HomePage from "./pages/HomePage/HomePage.js";
 import NewsPage from "./pages/NewsPage.js";
 function App() {
   const [theme, setTheme] = useState('dark');
+  const [checked, setChecked] = useState(false);
 
-  const toggleTheme = () => {
-    if (theme === "dark") {
-      setTheme('light');
+
+
+  const check = () => {
+    if (checked) {
+      setChecked(false);
+      if (theme === "light") {
+        setTheme('dark');
+      }
+
     } else {
-      setTheme('dark')
+      setChecked(true);
+      if (theme === "dark") {
+        setTheme("light");
+      }
     }
   }
-
   return (
     <ThemeProvider theme={theme === 'light' ? lightMode : darkMode}>
       <>
@@ -27,7 +36,7 @@ function App() {
           <NavigationBar
             lightMode={
               <label style={{ float: "right" }} >
-                <Switch onClick={toggleTheme} id="lightMode" />
+                <Switch onChange={check} id="lightMode" checked={checked} />
                 Light Mode
               </label>
             }
