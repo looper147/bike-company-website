@@ -1,4 +1,6 @@
-
+/* .hidden li  button {
+       display: block;
+        } */
 nav {
   overflow: hidden;
   margin: 0 auto;
@@ -72,11 +74,12 @@ ul li button {
 
 
 /* on smaller screens*/
-@media (max-width:768px) {
+/* @media (max-width:768px) {
   body {
     height: 100%;
   }
-  .toggle {
+ 
+  .active{
     display: block;
   }
   ul {
@@ -84,7 +87,7 @@ ul li button {
     
   }
   ul li {
-    display:flex;
+    display:none;
     text-align: center;
   }
   ul li button {
@@ -144,4 +147,4 @@ ul li button {
 }
 
 }
-
+ */

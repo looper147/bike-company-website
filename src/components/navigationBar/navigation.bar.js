@@ -1,9 +1,38 @@
+import React from "react";
 import "./navigation.bar.css";
 import SearchBox from "./components/searchBox.js"
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import MenuIcon from "@material-ui/icons/Menu";
+import { makeStyles } from "@material-ui/core";
 
+const useStyles = makeStyles({
+    toggle: {
+        display: "none",
+        fontSize: "70px",
+    },
+    "@media (max-width:768px)": {
+        toggle: {
+            display: "block",
+        },
+        button: {
+            display: "none",
+        },
+        hidden: {
+            "& li button": {
+                display: "block",
+                fontSize: "35px",
+                padding: "0px",
+                margin: "10px",
+            },
+            "& a": {
+                textDecoration: "none",
+            }
+
+        }
+    }
+})
 const Button = styled.button`
     &&{
         color: ${({ theme }) => theme.text}!important;
@@ -43,19 +72,24 @@ const DropBtn = styled.button`
     
     `
 export default function NavigationBar(props) {
+    const classes = useStyles();
+    const [showLinks, setShowLinks] = React.useState(false);
+
     return (
         <>
+            <Button onClick={() => setShowLinks(!showLinks)}><MenuIcon className={classes.toggle} /></Button>
+            {props.lightMode}
             <nav>
 
-                <ul>
+                <ul className={showLinks ? classes.hidden : ""}>
                     <li>
-                        <NavLink exact to="/" ><Button className="navBt">Home<ArrowDropDownIcon style={{ color: "transparent" }} /></Button> </NavLink>
+                        <NavLink exact to="/" ><Button className={classes.button}>Home<ArrowDropDownIcon style={{ color: "transparent" }} /></Button> </NavLink>
                     </li>
 
                     <li>
                         <div className="dropdown">
                             <NavLink to="/News">
-                                <Button className="dropbtn">News<ArrowDropDownIcon /></Button>
+                                <Button className={classes.button}>News<ArrowDropDownIcon /></Button>
                             </NavLink>
                             <div className="dropdown-content">
                                 <DropBtn>Latest News</DropBtn>
@@ -67,7 +101,7 @@ export default function NavigationBar(props) {
 
                     <li>
                         <div className="dropdown">
-                            <Button className="dropbtn">Types<ArrowDropDownIcon /></Button>
+                            <Button className={classes.button}>Types<ArrowDropDownIcon /></Button>
                             <div className="dropdown-content">
                                 <DropBtn>Street</DropBtn>
                                 <DropBtn>Off-road</DropBtn>
@@ -78,7 +112,7 @@ export default function NavigationBar(props) {
 
                     <li>
                         <div className="dropdown">
-                            <Button className="dropbtn">Model Year<ArrowDropDownIcon /></Button>
+                            <Button className={classes.button}>Model Year<ArrowDropDownIcon /></Button>
                             <div className="dropdown-content">
                                 <DropBtn>1970-2000</DropBtn>
                                 <DropBtn>2001-2010</DropBtn>
@@ -89,7 +123,7 @@ export default function NavigationBar(props) {
 
                     <li>
                         <div className="dropdown">
-                            <Button className="dropbtn">Manufacturers<ArrowDropDownIcon /></Button>
+                            <Button className={classes.button}>Manufacturers<ArrowDropDownIcon /></Button>
                             <div className="dropdown-content">
                                 <DropBtn>Harley-Davidson	</DropBtn>
                                 <DropBtn>Honda</DropBtn>
@@ -104,9 +138,8 @@ export default function NavigationBar(props) {
                         <SearchBox style={{ border: "none" }} />
                     </li>
 
-                    <li style={{ float: "right" }}>
-                        {props.lightMode}
-                    </li>
+
+
                 </ul>
 
             </nav>

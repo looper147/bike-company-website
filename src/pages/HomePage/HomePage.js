@@ -2,8 +2,6 @@ import { makeStyles } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import styled from "styled-components";
 import Carousel from "./components/Carousel.js";
-// import { makeStyles } from "@material-ui/core/styles";
-// import pic from "./components/darkMode2.jpg";
 
 const styles = makeStyles({
     body: {
